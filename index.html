@@ -421,47 +421,7 @@
     color: var(--accent);
     transform: translateY(-2px);
   }
-  .contact-form {
-    margin-top: 3rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 16px; padding: 2.5rem;
-    text-align: left;
-  }
-  .form-row { margin-bottom: 1.25rem; }
-  .form-row label {
-    display: block; font-size: 0.8rem; font-weight: 500;
-    color: var(--muted); margin-bottom: 0.4rem;
-    letter-spacing: 0.05em; text-transform: uppercase;
-  }
-  .form-row input,
-  .form-row textarea {
-    width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem; font-weight: 300;
-    padding: 0.85rem 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-    resize: vertical;
-  }
-  .form-row input:focus,
-  .form-row textarea:focus { border-color: var(--accent); }
-  .form-row textarea { min-height: 120px; }
-  .form-submit {
-    width: 100%;
-    background: var(--accent); color: #fff;
-    border: none; border-radius: 8px;
-    padding: 0.9rem;
-    font-family: 'Syne', sans-serif;
-    font-size: 0.95rem; font-weight: 700;
-    cursor: pointer; letter-spacing: 0.02em;
-    transition: background 0.2s;
-  }
-  .form-submit:hover { background: #6fa3f9; }
+
 
   /* ── FOOTER ── */
   footer {
@@ -603,7 +563,7 @@
 
     <div class="exp-card fade-up">
       <div class="exp-header">
-        <div class="exp-company">Tech Mahindra Inc. - Cisco</div>
+        <div class="exp-company">Tech Mahindra Inc.</div>
         <div class="exp-period">Dec 2025 – Present</div>
       </div>
       <div class="exp-role">Associate Software Engineer · New York, USA</div>
@@ -659,7 +619,6 @@
         <span class="tag">Docker</span>
         <span class="tag">AWS EC2</span>
         <span class="tag">Flask</span>
-        <span class="tag">GPipe</span>
       </div>
     </div>
 
@@ -710,19 +669,6 @@
         <span class="tag">Redis</span>
         <span class="tag">Inngest</span>
         <span class="tag green">LLM</span>
-      </div>
-    </div>
-
-        <div class="project-card fade-up" style="transition-delay:0.1s">
-      <div class="project-icon" style="background:rgba(79,142,247,0.1);">🌟</div>
-      <h3>Research Blog Writter Agent</h3>
-      <p>This system reduces manual work by automating the entire content lifecycle, transforming hours of human research and outlining into a single-click autonomous workflow.</p>
-      <div class="tags">
-        <span class="tag">LangChain</span>
-        <span class="tag">LLM</span>
-        <span class="tag">Web Scraping</span>
-        <span class="tag">node js</span>
-        <span class="tag green">Prompt Engineering</span>
       </div>
     </div>
 
@@ -817,7 +763,8 @@
   <div class="research-card fade-up">
     <div class="research-icon">📄</div>
     <div class="research-content">
-      <h3><a href="https://indjst.org/articles/computer-vision-application-in-object-detection-and-tracking-for-aerial-surveillance" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(167,139,250,0.4);padding-bottom:2px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(167,139,250,0.9)'" onmouseout="this.style.borderColor='rgba(167,139,250,0.4)'">Computer Vision for Aerial Surveillance: Benchmarking Deep Learning Models for Robust Object Detection in Drone Imagery</a></h3>
+      <h3>Computer Vision for Aerial Surveillance: Benchmarking Deep Learning Models for Robust Object Detection in Drone Imagery</h3>
+      <div class="research-meta">Indian Journal of Science and Technology · 2023 · Co-authored</div>
       <p>
         A peer-reviewed study evaluating and benchmarking state-of-the-art deep learning architectures — including Mask R-CNN and Faster R-CNN variants — for object detection tasks in challenging aerial drone imagery. The work addresses real-world conditions such as variable lighting, occlusion, and scale inconsistency common in surveillance applications.
       </p>
@@ -866,6 +813,8 @@
       </a>
     </div>
 
+
+  </div>
 </section>
 
 <footer>
@@ -904,6 +853,7 @@
     e.preventDefault();
     alert('Resume download: Replace this handler with a link to your hosted PDF resume file (e.g., on Google Drive or your own server).');
   }
+
 
 </script>
 </body>
