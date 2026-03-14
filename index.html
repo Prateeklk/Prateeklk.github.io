@@ -922,14 +922,6 @@
     alert('Resume download: Replace this handler with a link to your hosted PDF resume file (e.g., on Google Drive or your own server).');
   }
 
-  // Contact form
-  function sendMessage() {
-    const name = document.getElementById('cName').value;
-    const email = document.getElementById('cEmail').value;
-    const msg = document.getElementById('cMsg').value;
-    if (!name || !email || !msg) { alert('Please fill in all fields.'); return; }
-    window.location.href = `mailto:wpkumbar@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg + '\n\nFrom: ' + email)}`;
-  }
 </script>
 </body>
 </html>
